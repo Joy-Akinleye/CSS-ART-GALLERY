@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/********************* HEADER *****************/
+#header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60px;
+    justify-content: space-between;
+    border: 3px solid salmon;
+}
+#header h3{
+     padding-top: 15px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar li {
+    padding: 13px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+
+}
+/*************************** WELCOME ***************/
+#welcome{
+    background-image: url(/images/banner2.jpg);
+    height: 400px;
+    background-size: cover;
+}
