@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-.page1{
+
+.page1 {
     height: 100vh;
 }
+
 /************************************ HOME ****************************/
 /******************* HEADER **************/
 #header {
@@ -17,35 +19,42 @@
     border: 1px solid salmon;
     /* box-shadow: 20px 20px 20px rgb(192, 133, 127); */
 }
-#header img{
+
+#header img {
     padding-left: 10px;
 }
-#header h3{
-     padding-top: 15px;
+
+#header h3 {
+    padding-top: 15px;
 }
+
 .navbar {
     display: flex;
     flex-direction: row;
+    margin-top: 5px;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: black;
-    padding: 8px;
+.navbar li {
+    list-style: none; 
+    padding: 10px;   
 }
-.navbar a li {
+
+.navbar li a {
     border-radius: 12px;
-    color: #ffa11a;
+    text-decoration: none;
     font-weight: 550;
+    color: #ffa11a;
     padding: 8px;
-    list-style: none;
 }
-.navbar a:hover{
+
+.navbar li a:hover,
+.navbar a:active {
     background-color: orange;
     color: white;
 }
+
 /******************* WELCOME **************/
-#welcome{
+#welcome {
     /* margin-top: 15px; */
     background-image: url(/images/banner2.jpg);
     height: 320px;
@@ -54,16 +63,19 @@
     background-size: cover;
     align-items: center;
 }
-#welcome h2{
+
+#welcome h2 {
     font-size: 30px;
     padding: 90px 0 40px 0;
     text-align: center;
     color: white;
 }
-#welcome button{
+
+#welcome button {
     background-color: red;
 }
-.artisttext{
+
+.artisttext {
     /* background-color: yellow; */
     color: rgb(220, 165, 87);
     /* margin-top: 10px; */
