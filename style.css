@@ -26,6 +26,8 @@
 
 #header h3 {
     padding-top: 15px;
+    color: #ffa11a;
+    font-weight: 600;
 }
 
 .navbar {
@@ -35,23 +37,32 @@
 }
 
 .navbar li {
-    list-style: none; 
-    padding: 10px;   
+    list-style: none;
+    padding: 10px;
 }
 
 .navbar li a {
     border-radius: 12px;
     text-decoration: none;
-    font-weight: 550;
+    font-weight: 400;
     color: #ffa11a;
     padding: 8px;
 }
 
-.navbar li a:hover,
-.navbar a:active {
+.navbar li a.active {
     background-color: orange;
     color: white;
 }
+
+.navbar li a:hover {
+    background-image: linear-gradient(to right, #FFB75E 0%, #ED8F03 51%, #FFB75E 100%);
+    transition: 0.8s;
+    background-size: 200% auto;
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+}
+
 
 /******************* WELCOME **************/
 #welcome {
@@ -66,20 +77,37 @@
 
 #welcome h2 {
     font-size: 30px;
-    padding: 90px 0 40px 0;
+    padding: 120px 0 30px 0;
     text-align: center;
-    color: white;
+    /* color: black; */
+    color: rgb(91, 63, 2);
+    /* color: rgb(247, 217, 175); */
 }
 
+/* welcome button */
 #welcome button {
-    background-color: red;
+    background-image: linear-gradient(to right, #BA8B02 0%, #181818 51%, #BA8B02 100%);
+    margin: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    font-weight: 600;
 }
+
+#welcome button:hover {
+    background-position: right center;
+}
+
+
 
 .artisttext {
-    /* background-color: yellow; */
-    color: rgb(220, 165, 87);
-    /* margin-top: 10px; */
-    padding: 40px 100px 40px 100px;
+    color: #ffa11a;
+    padding: 40px 120px 40px 120px;
     font-size: 22px;
     height: 220px;
     font-style: italic;
