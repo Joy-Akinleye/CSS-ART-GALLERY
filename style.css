@@ -103,8 +103,6 @@
     background-position: right center;
 }
 
-
-
 .artisttext {
     color: #ffa11a;
     padding: 40px 120px 40px 120px;
@@ -112,4 +110,13 @@
     height: 220px;
     font-style: italic;
     font-weight: 550;
+} 
+/******************************** ARTIST SECTION ******************/
+#artist{ 
+    height: 100vh;
+}
+#artist h3{
+    color: #ffa11a;
+    text-align: center;
+    font-size: 25px;
 }
