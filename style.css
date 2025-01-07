@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    width: 100%;
+}
+/************************************ HOME ****************************/
 .page1 {
     height: 100vh;
 }
 
-/************************************ HOME ****************************/
 /******************* HEADER **************/
 #header {
     display: flex;
@@ -119,4 +121,43 @@
     color: #ffa11a;
     text-align: center;
     font-size: 25px;
+    /* background-color: red; */
+    height: 6vh;
+}
+.introduction{
+    height: 92vh;
+    background-color: green;
+}
+.artistphoto1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    height: 45vh;
+    border: 3px solid yellow;
+    justify-content: space-between;
+    padding: 10px 40px 10px 40px;
+}
+.artistphoto2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 45vh;
+    padding-top: 20px;
+    border: 3px solid purple;
+    justify-content: space-between;
+    padding: 10px 40px 10px 40px;
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+}
+.bio p {
+    text-align: center;
+    padding-top: 7px;
+}
+/**********************ART WORKS  **************/
+#artwork{
+height: 100vh;
 }
