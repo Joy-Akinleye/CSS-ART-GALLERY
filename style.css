@@ -126,7 +126,7 @@ body{
 }
 .introduction{
     height: 92vh;
-    background-color: green;
+    /* background-color: green; */
 }
 .artistphoto1{
     display: flex;
@@ -134,7 +134,7 @@ body{
     flex-wrap: wrap;
     margin-top: 10px;
     height: 45vh;
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
     justify-content: space-between;
     padding: 10px 40px 10px 40px;
 }
@@ -144,7 +144,7 @@ body{
     flex-wrap: wrap;
     height: 45vh;
     padding-top: 20px;
-    border: 3px solid purple;
+    /* border: 3px solid purple; */
     justify-content: space-between;
     padding: 10px 40px 10px 40px;
 }
@@ -153,11 +153,26 @@ body{
     display: flex;
     flex-direction: column;
 }
+.bio img{
+    border-radius: 12px;
+    height: 200px;
+    width: 180px;
+}
+
 .bio p {
     text-align: center;
     padding-top: 7px;
+    font-size: 18px;
+    color: #ffa11a;
+    font-weight: 600;
 }
 /**********************ART WORKS  **************/
 #artwork{
 height: 100vh;
+}
+#artwork h3{
+    color: #ffa11a;
+    text-align: center;
+    font-size: 25px;
+    height: 6vh;
 }
