@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
 }
+
 /************************************ HOME ****************************/
 .page1 {
     height: 100vh;
@@ -112,48 +114,41 @@ body{
     height: 220px;
     font-style: italic;
     font-weight: 550;
-} 
+}
+
 /******************************** ARTIST SECTION ******************/
-#artist{ 
+#artist {
     height: 100vh;
 }
-#artist h3{
+
+#artist h3 {
     color: #ffa11a;
     text-align: center;
     font-size: 25px;
-    /* background-color: red; */
     height: 6vh;
 }
-.introduction{
+
+.introduction {
     height: 92vh;
-    /* background-color: green; */
 }
-.artistphoto1{
+
+.artistphoto1,
+.artistphoto2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 10px;
     height: 45vh;
-    /* border: 3px solid yellow; */
-    justify-content: space-between;
-    padding: 10px 40px 10px 40px;
-}
-.artistphoto2{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 45vh;
-    padding-top: 20px;
-    /* border: 3px solid purple; */
     justify-content: space-between;
     padding: 10px 40px 10px 40px;
 }
 
-.bio{
+.bio {
     display: flex;
     flex-direction: column;
 }
-.bio img{
+
+.bio img {
     border-radius: 12px;
     height: 200px;
     width: 180px;
@@ -166,13 +161,40 @@ body{
     color: #ffa11a;
     font-weight: 600;
 }
+
 /**********************ART WORKS  **************/
-#artwork{
-height: 100vh;
+#artwork {
+    height: 100vh;
 }
-#artwork h3{
+
+#artwork h3 {
     color: #ffa11a;
     text-align: center;
     font-size: 25px;
     height: 6vh;
+}
+
+.artgallery {
+    height: 92vh;
+}
+
+.display1,
+.display2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    height: 45vh;
+    justify-content: space-between;
+    padding: 10px 40px 10px 40px;
+}
+.display2{
+    width: 75%;
+    background-color: green;
+}
+
+.work img {
+    border-radius: 12px;
+    height: 200px;
+    width: 180px;
 }
