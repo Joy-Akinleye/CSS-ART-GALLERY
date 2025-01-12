@@ -178,6 +178,12 @@ body {
     height: 92vh;
 }
 
+.blueprint {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .display1,
 .display2 {
     display: flex;
@@ -188,9 +194,30 @@ body {
     justify-content: space-between;
     padding: 10px 40px 10px 40px;
 }
-.display2{
-    width: 75%;
-    background-color: green;
+
+.display2 {
+    width: 73.5%;
+    /* background-color: green; */
+}
+
+.blueprint button {
+    background-image: linear-gradient(to right, #000428 0%, #004e92  51%, #000428  100%);
+    transition: 0.5s;
+    width: 130px;
+    padding: 10px;
+    font-weight: 600;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 50px;
+
+}
+
+.blueprint button:hover {
+    background-position: right center;
 }
 
 .work img {
