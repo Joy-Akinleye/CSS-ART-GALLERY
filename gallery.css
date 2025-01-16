@@ -8,13 +8,42 @@ body{
 }
 #header{
     height: 9vh;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.back{
+    padding: 10px;
+    /* background-color: #ffa11a; */
+}
+.back img{
+    width: 40px;
+    height: 30px;
+    /* filter: invert(100%); */
+     /* Changes the color of the arrow from black to white */
+    /* filter: grayscale(100%)brightness(0)invert(1);
+    mix-blend-mode: multiply;
+    background-color: #ffa11a; */
 }
 #header h3{
     color: #ffa11a;
     padding: 10px;
     font-size: 25px;
     font-weight: 600;
+}
+nav{
+    padding-left: 250px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+nav ul li{
+    padding: 0px 20px;
+    list-style: none;
 }
 #container{
     display: grid;
