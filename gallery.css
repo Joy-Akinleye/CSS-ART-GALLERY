@@ -1,69 +1,138 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
 }
-#header{
+
+/******************* HEADER **************/
+#header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60px;
+    justify-content: space-between;
+    border: 1px solid salmon;
+    position: static;
+    /* box-shadow: 20px 20px 20px rgb(192, 133, 127); */
+}
+
+#header img {
+    padding-left: 10px;
+}
+
+#header h3 {
+    padding-top: 15px;
+    color: #ffa11a;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+nav li {
+    list-style: none;
+    padding: 10px;
+}
+
+nav li a {
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #ffa11a;
+    padding: 8px;
+}
+
+nav li a.active {
+    background-color: orange;
+    color: white;
+}
+
+nav li a:hover {
+    background-image: linear-gradient(to right, #FFB75E 0%, #ED8F03 51%, #FFB75E 100%);
+    transition: 0.8s;
+    background-size: 200% auto;
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+}
+
+/************** SUB-HEADING ***********/
+.sub-head {
     height: 9vh;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: row;
-}
-.back{
-    padding: 10px;
-    /* background-color: #ffa11a; */
-}
-.back img{
-    width: 40px;
-    height: 30px;
-    /* filter: invert(100%); */
-     /* Changes the color of the arrow from black to white */
-    /* filter: grayscale(100%)brightness(0)invert(1);
-    mix-blend-mode: multiply;
-    background-color: #ffa11a; */
-}
-#header h3{
     color: #ffa11a;
     padding: 10px;
     font-size: 25px;
     font-weight: 600;
 }
-nav{
-    padding-left: 250px;
-}
-nav ul{
+
+.search {
+    --padding: 14px;
+
+    width: max-content;
     display: flex;
-    flex-direction: row;
-    padding: 15px;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 14px;
+    background: #f6f6f6;
+    /* transition: background 0.25s; */
+    transition: box-shadow 0.25s;
 }
-nav ul li{
-    padding: 0px 20px;
-    list-style: none;
+
+.search:focus-within {
+    /* background: #f1f1f1; */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
 }
-#container{
+
+.search-input {
+    font-size: 16px;
+    color: #333333;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 400px;
+}
+
+.search-input::placeholder,
+.search-icon {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+/******************** CONTAINER *****************/
+#container {
     display: grid;
     border: 3px red;
     grid-template-rows: 200px;
     grid-template-rows: 230px;
 
 }
+
 /* #artphoto1{
     grid-row-start: ;
     grid-row-end: ;
     grid-column-start: ;
     grid-column-end: ;
 } */
-.photo{
+.photo {
     width: 200px;
     height: 230px;
     border: 3px solid yellow;
 }
-#comtainer img{
+
+#comtainer img {
     width: 180px;
     height: 200px;
     border-radius: 12px;

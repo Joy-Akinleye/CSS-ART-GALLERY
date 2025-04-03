@@ -21,6 +21,7 @@ body {
     height: 60px;
     justify-content: space-between;
     border: 1px solid salmon;
+    position: static;
     /* box-shadow: 20px 20px 20px rgb(192, 133, 127); */
 }
 
@@ -32,20 +33,22 @@ body {
     padding-top: 15px;
     color: #ffa11a;
     font-weight: 600;
+    font-size: 25px;
+
 }
 
-.navbar {
+nav {
     display: flex;
     flex-direction: row;
     margin-top: 5px;
 }
 
-.navbar li {
+nav li {
     list-style: none;
     padding: 10px;
 }
 
-.navbar li a {
+nav li a {
     border-radius: 12px;
     text-decoration: none;
     font-weight: 400;
@@ -53,12 +56,12 @@ body {
     padding: 8px;
 }
 
-.navbar li a.active {
+nav li a.active {
     background-color: orange;
     color: white;
 }
 
-.navbar li a:hover {
+nav li a:hover {
     background-image: linear-gradient(to right, #FFB75E 0%, #ED8F03 51%, #FFB75E 100%);
     transition: 0.8s;
     background-size: 200% auto;
@@ -101,6 +104,7 @@ body {
     border-radius: 10px;
     display: block;
     font-weight: 600;
+    cursor: pointer;
 }
 
 #welcome button:hover {
@@ -213,6 +217,7 @@ body {
     color: white;
     box-shadow: 0 0 20px #eee;
     border-radius: 50px;
+    cursor: pointer;
 
 }
 
